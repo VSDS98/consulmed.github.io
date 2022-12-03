@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+
+        <!--METADADOS-->
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="html, metadados, comentários, layout, listas">
+        <!--FIM METADADOS-->
+
+        <title>AConsulmed - Como funciona</title>
+        <link rel="stylesheet" href="css/estilo.css">
+        <link rel="shortcut icon" href="imagem/favicon.png" type="image/x-icon">
+        <script src="https://code.jquery.com/jquery-3.6.1.min.js" integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ=" crossorigin="anonymous"></script>  
+    
+    </head>
+    <body>
+        <div class="acessibilidade flex-container">
+            <ul class="atalhos">
+                <li><a href="#conteudo" accesskey="1" title="Ir para a área de conteúdo">Ir para o conteúdo [1]</a></li>
+                <li><a href="#menu" accesskey="2" title="Ir para o menu de navegação">Ir para o menu [2]</a></li>
+                <li><a href="#rodape" accesskey="3" title="Ir para o rodapé">Ir para o rodapé [3]</a></li>
+            </ul>
+            <ul class="links_access">
+                <li><a href="acessibilidade.html">Acessibilidade</a></li>
+                <li><a href="javascript:void(0);" id="contraste">Contraste</a></li>
+                <li><a href="javascript:void(0);" id="semcontraste">Sem Contraste</a></li>
+                <li><a href="javascript:void(0);" id="aumenta">A+</a></li>
+                <li><a href="javascript:void(0);" id="diminui">A-</a></li>
+            </ul>
+        </div>
+
+        <!--Cabeçalho-->
+        <header class="flex-container" id="topo">
+            <!--LOGO-->
+            <a href="index.html" title="Voltar para o início">
+                <img id="logo" src="imagem/consulmed-logo.png" alt="logo Fatec Zona Leste nas cores cinza e vermelho">
+            </a>
+            <!--FIM LOGO-->
+            <div vw class="enabled">
+                <div vw-access-button class="active"></div>
+                <div vw-plugin-wrapper>
+                <div class="vw-plugin-top-wrapper"></div>
+                </div>
+            </div>
+            <script src="https://vlibras.gov.br/app/vlibras-plugin.js"></script>
+            <script>
+                new window.VLibras.Widget('https://vlibras.gov.br/app');
+            </script>
+        
+            <!--MENU-->
+            <nav class="flex-container">
+
+                <!--MENU MOBILE-->
+                <label for="bt_menu"><img src="imagem/menu.png" alt="menu"></label>
+                <input type="checkbox" name="bt_menu" id="bt_menu">
+
+                <!--MENU BOTÕES-->
+                <ul class="menu" id="menu">
+                    <a href="index.html"><li>Início</li></a>
+                    <a href="javascript:void(0);"><li>Sobre</a>
+                        <ul>
+                            <a href="como-funciona.html"><li>Como funciona </li></a>
+                            <a href="quem-somos.html"><li>Quem somos</li></a>
+                        </ul></a>
+                    </li>
+                    <a href="login.html"><li>Login</li></a>
+                    <a href="exames.html"><li>Exames</li></a>
+                    <a href="consultas.html"><li>Consultas</li></a>
+                    <a href="fale-conosco.html"><li>Fale Conosco</li></a>
+                    <a href="cadastro.html"><li>Cadastro</li></a>
+                    <a href="agendar-consulta.html"><li>Agendar Consulta</li></a>
+                </ul>
+                
+            </nav>
+        </header>
+
+        <!--BANNER-->
+            
+        <div id="banner">
+
+            <img id="imagem-banner" src="imagem/banner-principal.jpg" alt="">
+            <h1 id="titulo-banner">Como funciona</h1>
+                
+        </div>
+
+
+        <main class="flex-container" id="conteudo"><!--Conteúdo-->
+            
+            <section>
+            <h2 id="titulo-pagina-1">MARCAR CONSULTAS</h2>
+            </br>
+
+            <p id="paragrafo-tipo-1">Para marcar uma consulta precisa Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.</p>
+                </br>
+            <p id="paragrafo-tipo-1">Lorem Ipsum is simply dummy text of the printing and 
+                typesetting industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s, when an unknown printer took a galley of type
+                and scrambled it to make a type specimen book.</p>
+
+
+            <img id="imagem-tipo-1" src="imagem/consultas.jpg" alt="Ilustração de uma consulta">
+            </section>
+            
+        </main>
+
+        <!-- BREADCRUMP-->
+
+        <ul class="breadcrumb">
+            <li><a href="index.html">Início</a></li>
+            <li>Sobre</li>
+            <li>Como funciona</li>
+        </ul>
+
+        <footer class="flex-container" id="rodape"><!--rodapé-->
+            
+
+            <p> Todos os direitos reservados &copy; 2022</p>
+            
+        </footer>
+    </body>
+    <script src="js/contraste.js"></script>
+    <script src="js/fonte.js"></script>
+</html>
